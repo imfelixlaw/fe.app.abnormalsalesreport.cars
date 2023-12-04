@@ -1,0 +1,27 @@
+﻿<!-- Add (For DataGridView) :
+    required WindowsFormsIntegration, System.Windows.Forms
+        xmlns:wfi="clr-namespace:System.Windows.Forms.Integration;assembly=WindowsFormsIntegration"
+        xmlns:wf="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"
+-->
+<Window x:Class="Cars_Reporting.WindowRptAbnormal"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:wfi="clr-namespace:System.Windows.Forms.Integration;assembly=WindowsFormsIntegration"
+        xmlns:wf="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"
+        Title="Abnormal Report" Height="503" Width="629" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid Width="603">
+        <Button Content="Close" Height="23" Margin="460,429,0,0" Name="buttonClose" VerticalAlignment="Top" HorizontalAlignment="Left" Width="96" Click="buttonClose_Click" />
+        <Button Content="Export to Excel" Height="50" HorizontalAlignment="Left" Margin="455,134,0,0" Name="buttonExcel" VerticalAlignment="Top" Width="96" Click="buttonExcel_Click" />
+        <Button Content="Generate" Height="23" HorizontalAlignment="Left" Margin="455,7,0,0" Name="buttonGenerateReport" VerticalAlignment="Top" Width="96" Click="buttonGenerateReport_Click" />
+        <Button Content="View Receipt Data" Height="50" Margin="455,52,0,0" Name="buttonViewData" VerticalAlignment="Top" HorizontalAlignment="Left" Width="96" Click="buttonViewData_Click" />
+        <DatePicker Height="25" Margin="197,8,0,0" Name="datePickerStartDate" VerticalAlignment="Top" HorizontalAlignment="Left" Width="115" />
+        <TextBlock Height="23" Margin="56,12,0,0" Name="textBlockSelectDate" Text="Please select a date range" VerticalAlignment="Top" HorizontalAlignment="Left" Width="127" />
+        <TextBlock Height="23" Margin="318,12,0,0" Name="textBlockTo" Text="to" VerticalAlignment="Top" HorizontalAlignment="Left" Width="10" />
+        <DatePicker Height="25" Margin="334,8,0,0" Name="datePickerEndDate" VerticalAlignment="Top" HorizontalAlignment="Left" Width="115" />
+        <!-- Add (For DataGridView) : -->
+        <DataGrid ItemsSource="{Binding}" AutoGenerateColumns="True" Height="411" HorizontalAlignment="Left" Margin="56,41,0,0" Name="dataGridResult" VerticalAlignment="Top" Width="393" CanUserReorderColumns="False" CanUserResizeColumns="False" CanUserSortColumns="False" />
+        <CheckBox Content="Include Items" Height="16" HorizontalAlignment="Left" Margin="469,190,0,0" Name="checkBoxIncludeItems" VerticalAlignment="Top" />
+        <Label Content="Revision" Height="28" HorizontalAlignment="Left" Margin="460,395,0,0" Name="labelRelease" VerticalAlignment="Top" />
+        <!-- Add (For DataGridView) : -->
+      </Grid>        
+</Window>

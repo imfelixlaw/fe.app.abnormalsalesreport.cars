@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Cars_Reporting.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="myhost" Type="System.String" Scope="User">
+      <Value Profile="(Default)">127.0.0.1</Value>
+    </Setting>
+    <Setting Name="myuser" Type="System.String" Scope="User">
+      <Value Profile="(Default)">root</Value>
+    </Setting>
+    <Setting Name="mypass" Type="System.String" Scope="User">
+      <Value Profile="(Default)">outlet</Value>
+    </Setting>
+    <Setting Name="mytable" Type="System.String" Scope="User">
+      <Value Profile="(Default)">crmtest</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

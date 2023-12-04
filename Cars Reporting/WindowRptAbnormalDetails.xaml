@@ -1,0 +1,30 @@
+﻿<Window x:Class="Cars_Reporting.WindowRptAbnormalDetails"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:wfi="clr-namespace:System.Windows.Forms.Integration;assembly=WindowsFormsIntegration"
+        xmlns:wf="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"
+        Title="Receipt Details" Height="358" Width="466" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Label Content="Receipt No" Height="28" HorizontalAlignment="Left" Margin="10,7,0,0" Name="labelReceiptNo" VerticalAlignment="Top" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="79,9,0,0" Name="textBoxReceiptNo" VerticalAlignment="Top" Width="120" IsReadOnly="True" />
+        <Label Content="Centre" Height="28" HorizontalAlignment="Left" Margin="12,36,0,0" Name="labelCentre" VerticalAlignment="Top" />
+        <Label Content="Date" Height="28" HorizontalAlignment="Left" Margin="10,65,0,0" Name="labelDate" VerticalAlignment="Top" />
+        <TextBox Height="23" HorizontalAlignment="Left" IsReadOnly="True" Margin="79,38,0,0" Name="textBoxCentre" VerticalAlignment="Top" Width="120" />
+        <TextBox Height="23" HorizontalAlignment="Left" IsReadOnly="True" Margin="79,67,0,0" Name="textBoxDate" VerticalAlignment="Top" Width="120" />
+        <Label Content="Car Plat No" Height="28" HorizontalAlignment="Left" Margin="213,7,0,0" Name="labelCarPlat" VerticalAlignment="Top" />
+        <Label Content="Tel No" Height="28" HorizontalAlignment="Left" Margin="213,36,0,0" Name="labelTelNo" VerticalAlignment="Top" />
+        <TextBox Height="23" HorizontalAlignment="Left" IsReadOnly="True" Margin="284,7,0,0" Name="textBoxCarNo" VerticalAlignment="Top" Width="120" />
+        <TextBox Height="23" HorizontalAlignment="Left" IsReadOnly="True" Margin="284,38,0,0" Name="textBoxTelNo" VerticalAlignment="Top" Width="120" />
+        <Label Content="Label" Height="28" HorizontalAlignment="Left" Margin="213,65,0,0" Name="labelTotal" VerticalAlignment="Top" />
+        <TextBox Height="23" HorizontalAlignment="Left" IsReadOnly="True" Margin="284,67,0,0" Name="textBoxTotal" VerticalAlignment="Top" Width="120" />
+        <GroupBox Header="Content of Service" Height="187" HorizontalAlignment="Left" Margin="15,103,0,0" Name="groupBoxReceiptContent" VerticalAlignment="Top" Width="417">
+            <Grid>
+                <DataGrid ItemsSource="{Binding}" AutoGenerateColumns="True" Height="155" HorizontalAlignment="Left" Margin="6,6,0,0" Name="dataGridContents" VerticalAlignment="Top" Width="393" CanUserReorderColumns="False" CanUserResizeColumns="False" CanUserSortColumns="False" />
+            </Grid>
+        </GroupBox>
+        <!-- Add (For DataGridView) : -->
+        <!-- Add (For DataGridView) : -->
+
+        <Button Content="Close" Height="23" HorizontalAlignment="Left" Margin="357,294,0,0" Name="buttonClose" VerticalAlignment="Top" Width="75" Click="buttonClose_Click" />
+    </Grid>
+</Window>
